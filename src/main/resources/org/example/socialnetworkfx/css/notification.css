@@ -1,0 +1,23 @@
+/* Style for the notification window background */
+.root {
+    -fx-background-color: #B0B9C8; /* Grey color complementing your palette */
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #1446A0; /* Accent color */
+    -fx-border-width: 2;
+}
+
+/* Style for the title label */
+.notification-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1446A0; /* Dark blue from the palette */
+    -fx-padding-bottom: 10;
+}
+
+/* Style for the message label */
+.notification-message {
+    -fx-font-size: 14px;
+    -fx-text-fill: #020202; /* Black from the palette */
+}

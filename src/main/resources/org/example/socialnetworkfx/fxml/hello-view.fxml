@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="360.0" spacing="20.0" stylesheets="@/org/example/socialnetworkfx/css/start-page.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.controller.StartController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Logo-ul aplicației -->
+    <ImageView fitHeight="190.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/logoApp.png" />
+        </image>
+    </ImageView>
+
+    <!-- Text de bun venit -->
+    <Label fx:id="welcomeText" prefWidth="300.0" text="We're bringing the traditional pen pal experience to your smartphone" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font name="Lilita One" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Buton personalizat -->
+    <Button fx:id="confirmButton" onAction="#handleGetStartedButton" styleClass="custom-button" text="Get Started!" />
+</VBox>

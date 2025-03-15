@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="360.0" stylesheets="@/org/example/socialnetworkfx/css/chat.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.controller.ChatController">
+    <children>
+        <VBox prefHeight="640.0" prefWidth="360.0" spacing="5.0">
+            <children>
+                <HBox prefHeight="540.0" prefWidth="360.0">
+                    <children>
+                        <ListView fx:id="messagesListView" prefHeight="465.0" prefWidth="349.0" />
+                    </children>
+                </HBox>
+                <Label fx:id="selectedMessageLabel" style="-fx-font-style: italic; -fx-text-fill: gray;" text="No message selected" />
+                <HBox alignment="CENTER" prefHeight="81.0" prefWidth="382.0" spacing="5.0">
+                    <children>
+                        <TextField fx:id="messageTextField" prefHeight="71.0" prefWidth="242.0" promptText="Send a message..." />
+                        <VBox spacing="5.0">
+                            <Button fx:id="replyButton" mnemonicParsing="false" onAction="#replyButtonClicked" prefHeight="33.0" prefWidth="102.0" styleClass="reply-button" text="Reply" />
+                            <Button fx:id="sendMessageButton" mnemonicParsing="false" onAction="#sendMessageButtonClicked" prefHeight="33.0" prefWidth="102.0" styleClass="chat-button" text="Send" />
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+    </padding>
+</AnchorPane>

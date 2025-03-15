@@ -1,0 +1,25 @@
+/* Style for welcomeLabel */
+#welcomeLabel {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 16px;
+}
+
+/* Style for friendsTable */
+#friendsTable {
+    -fx-background-color: #1446A0;
+}
+
+/* Style for the header of friendsTable */
+#friendsTable .column-header-background {
+    -fx-background-color: #6CA0DC; /* Albastru deschis */
+}
+
+/* Style for the rows of friendsTable */
+#friendsTable .table-row-cell {
+    -fx-background-color: #1446A0; /* Fundalul rândurilor */
+}
+#backgroung {
+    -fx-background-color: #6CA0DC;
+}

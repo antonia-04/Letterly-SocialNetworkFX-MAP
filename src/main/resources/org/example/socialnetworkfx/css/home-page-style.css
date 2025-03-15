@@ -1,0 +1,61 @@
+
+
+/* Textul de bun venit - font mare și îngroșat */
+.welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #031927; /* Culoare inchisa pentru text */
+    -fx-padding: 15px;
+}
+
+/* Tabelul - fără padding suplimentar și cu linii subtile */
+#friendsTable {
+    -fx-background-color: #FFFFFF; /* Fundal alb */
+    -fx-border-color: #E0E0E0; /* Linia subtire pentru bordura */
+    -fx-border-width: 1px;
+    -fx-effect: innershadow(gaussian, #E0E0E0, 10, 0.7, 0, 0);
+}
+
+/* Coloanele tabelului cu un font discret */
+#firstNameColumn, #lastNameColumn {
+    -fx-text-fill: #031927;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-padding: 10px;
+}
+
+/* Butoanele pentru navigare (next/prev) */
+.nav-button {
+    -fx-background-color: #D1D1D1; /* Gri deschis */
+    -fx-text-fill: #031927; /* Text închis */
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+    -fx-background-color: #B0B0B0; /* Gri mai închis la hover */
+    -fx-cursor: hand;
+}
+
+/* Butoanele principale - cu un mov subtil și text clar vizibil */
+#addFriendButton, #removeFriendButton, #friendRequestsButton, #notificationsButton, #chatButton {
+    -fx-background-color: #C8B3EE; /* Mov deschis */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-transition: background-color 0.3s, transform 0.3s;
+}
+
+#addFriendButton:hover, #removeFriendButton:hover, #friendRequestsButton:hover, #notificationsButton:hover, #chatButton:hover {
+    -fx-background-color: #CC3363; /* Mov mai intens la hover */
+    -fx-transform: scale(1.05);
+    -fx-cursor: hand;
+}

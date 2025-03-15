@@ -1,0 +1,23 @@
+.chat-button {
+    -fx-background-color: #5A7FCB; /* Use your blue color */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.reply-button {
+    -fx-background-color: #B0B9C8; /* Use your blue color */
+    -fx-text-fill: #020202;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.chat-button:hover {
+    -fx-background-color: #4A6FB3; /* Slightly darker blue for hover effect */
+}

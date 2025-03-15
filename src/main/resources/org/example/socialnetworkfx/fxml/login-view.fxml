@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="360.0" spacing="20.0" stylesheets="@/org/example/socialnetworkfx/css/login-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.controller.LoginController">
+    <!-- Background principal -->
+    <style>
+        -fx-background-color: #1446A0;
+    </style>
+
+    <!-- Header -->
+    <HBox alignment="CENTER" prefHeight="86.0" prefWidth="360.0" style="-fx-background-color: #E5E7E6; -fx-padding: 10;">
+        <children>
+            <!-- Logo-ul aplicației -->
+            <ImageView fitHeight="83.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../images/logoApp.png" />
+                </image>
+            </ImageView>
+        </children>
+    </HBox>
+
+    <!-- Textul "Welcome back!" cu text alb și puțin mai jos -->
+    <Text fill="#e5e7e6" style="-fx-font-family: 'Dubai'; -fx-font-size: 40px; -fx-text-fill: #E5E7E6; -fx-font-weight: bold;" text="Welcome&#10;back!" textAlignment="CENTER" translateY="20" wrappingWidth="300.0" />
+
+    <VBox alignment="CENTER" maxWidth="300.0" prefHeight="284.0" prefWidth="300.0" spacing="15.0">
+        <!-- Text pentru Username -->
+        <Label prefHeight="0.0" prefWidth="300.0" style="-fx-font-family: 'Dubai'; -fx-font-size: 14px; -fx-text-fill: #E5E7E6; -fx-font-weight: bold;" text="Username" />
+        <TextField fx:id="usernameField" prefWidth="300.0" promptText="Enter your username" style="-fx-font-size: 14px; -fx-border-radius: 5; -fx-background-radius: 5;" />
+
+        <!-- Text pentru Password -->
+        <Label prefHeight="20.0" prefWidth="300.0" style="-fx-font-family: 'Dubai'; -fx-font-size: 14px; -fx-text-fill: #E5E7E6; -fx-font-weight: bold;" text="Password" />
+        <PasswordField fx:id="passwordField" prefWidth="300.0" promptText="Enter your password" style="-fx-font-size: 14px; -fx-border-radius: 5; -fx-background-radius: 5;" />
+
+        <!-- Buton de login -->
+        <Button fx:id="loginButton" onAction="#handleLoginButton" prefHeight="45.0" prefWidth="300.0" style="-fx-background-color: #6CA0DC; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-border-radius: 5; -fx-background-radius: 5;" text="Login" />
+    </VBox>
+</VBox>

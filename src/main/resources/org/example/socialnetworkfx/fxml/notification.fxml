@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.controller.NotificationController" prefWidth="320" prefHeight="180" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 4);">
+    <!-- Notification Background -->
+    <Rectangle arcHeight="10.0" arcWidth="10.0" height="180.0" width="320.0" fill="#FFFFFF" />
+
+    <!-- Title -->
+    <Label fx:id="titleLabel" layoutX="20.0" layoutY="20.0" prefWidth="280.0" prefHeight="30.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1446A0;" text="Title" />
+
+    <!-- Message -->
+    <Label fx:id="messageLabel" layoutX="20.0" layoutY="60.0" prefWidth="280.0" wrapText="true" style="-fx-font-size: 14px; -fx-text-fill: #444444;" text="Message content goes here." />
+</AnchorPane>

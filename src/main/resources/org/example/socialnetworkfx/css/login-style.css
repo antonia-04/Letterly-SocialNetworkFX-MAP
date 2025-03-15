@@ -1,0 +1,91 @@
+/* Stil pentru background-ul principal */
+.root {
+    -fx-background-color: #1446A0; /* Culoare fundal principală */
+}
+
+/* Stil pentru header-ul paginii (zona de sus) */
+.header {
+    -fx-background-color: #E5E7E6; /* Culoare header */
+    -fx-padding: 10px;
+}
+
+/* Stil pentru logo-ul aplicației */
+#logoImage {
+    -fx-fit-height: 80px;
+    -fx-fit-width: 100px;
+    -fx-preserve-ratio: true;
+}
+
+/* Stil pentru textul de bun venit */
+#loginLabel {
+    -fx-font-family: "Dubai";
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E5E7E6; /* Culoare text */
+    -fx-padding: 10 0;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+/* Stil pentru câmpurile de text (Username și Password) */
+#usernameField, #passwordField {
+    -fx-background-color: #FFFCF2; /* Fundal deschis, culoare subtilă */
+    -fx-border-color: #C8B3EE; /* Bordură mov deschis */
+    -fx-border-radius: 10px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #031927; /* Text închis */
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-pref-width: 300px; /* Lățime constantă pentru câmpuri */
+}
+
+/* Schimbare la hover pentru câmpurile de text */
+#usernameField:hover, #passwordField:hover {
+    -fx-border-color: #D1B6E1; /* Bordură mov mai deschis, spre gri */
+    -fx-background-color: #F5F1F8; /* Fundal mai deschis, aproape gri */
+}
+
+/* Focus pe câmpul de text */
+#usernameField:focused, #passwordField:focused {
+    -fx-border-color: #1446A0; /* Bordură roșie la focus */
+    -fx-background-color: #F1E8FF; /* Fundal mai deschis când focusat */
+}
+
+/* Stil pentru butonul de Login */
+#loginButton {
+    -fx-background-color: #C8B3EE; /* Fundal mov deschis */
+    -fx-text-fill: white; /* Text alb */
+    -fx-font-size: 16px; /* Text mai mare */
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 12 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-opacity: 0.9;
+    -fx-pref-width: 300px; /* Lățime consistentă cu câmpurile */
+}
+
+/* Schimbare la hover pentru buton */
+#loginButton:hover {
+    -fx-background-color: #1446A0; /* Fundal roșu la hover */
+    -fx-opacity: 1;
+}
+
+/* Stil pentru textul "Welcome back!" */
+#welcomeText {
+    -fx-font-family: "Dubai";
+    -fx-font-size: 70px;
+    -fx-text-fill: #E5E7E6;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-padding: 10;
+}
+
+/* Centering the form in the container */
+.loginForm {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+    -fx-padding: 20px;
+}
