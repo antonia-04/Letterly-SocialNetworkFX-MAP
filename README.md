@@ -1,6 +1,6 @@
 # Letterly - O retea de socializare dezvoltata in Java
 
-![Letterly](./images/letterly.png)
+![Letterly](./Letterly.png)
 
 Letterly este o rețea de socializare simplificată, dezvoltată în Java utilizând **JavaFX** pentru interfața grafică și **PostgreSQL** pentru gestionarea bazei de date.
 
