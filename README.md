@@ -18,7 +18,7 @@ Letterly este o rețea de socializare simplificată, dezvoltată în Java utiliz
 
 ## 📸 Previzualizări
 
-[📄 Vezi descrierea si interfata proiectului](./MAP - design app.pdf)
+[📄 Vezi documentația proiectului](./MAP-design-app.pdf)
 
 ## ⚙️ Instalare și rulare
 ```sh
